@@ -1,0 +1,21 @@
+{
+  "name": "react-api-multirepo-on-now",
+  "version": "1.0.0",
+  "description": "A boilerplate for a React app with a serverless API endpoint as backend. Also a dev-server to serve microservice API endpoints in local dev env.",
+  "main": "index.js",
+  "author": "Jonas Myrenås",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "start-dev-server": "PORT=3001 nodemon --watch api _dev/index.js",
+    "start-dev-app": "cd my-app && yarn start",
+    "dev": "yarn start-dev-server & yarn start-dev-app",
+    "move-build": "cp -R ./my-app/build/. ./",
+    "build-app": "cd ./my-app && yarn run build & cd ..",
+    "build": "yarn run build-app && yarn run move-build"
+  },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.6"
+  }
+}
