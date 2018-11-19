@@ -1,10 +1,12 @@
 const todosApi = require('../api/todos')
+const moreTodosApi = require('../api/moretodos')
 
 const createError = require('http-errors')
 const express = require('express')
 
 const apiRouter = express.Router()
 apiRouter.get('/todos', todosApi)
+apiRouter.get('/moretodos', moreTodosApi)
 
 const app = express()
 

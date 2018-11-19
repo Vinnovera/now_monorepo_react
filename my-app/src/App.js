@@ -7,6 +7,7 @@ import './App.css';
 class App extends Component {
 	componentDidMount() {
 		fetch('/api/todos?number=1')
+		fetch('/api/moretodos?number=2')
 	}
 
 	render() {

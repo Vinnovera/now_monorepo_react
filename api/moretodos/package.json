@@ -1,0 +1,10 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jonas Myrenås",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
